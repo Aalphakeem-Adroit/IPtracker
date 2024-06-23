@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+      <h2>IP Address Tracker</h2>
+
+      <div class="input-field">
+          <input type="text" id="ip-input" placeholder="Search for any IP address or domain"/>
+          <button onclick="trackIP()">
+            <img src="./images/icon-arrow.svg" alt="Submit Arrow">
+          </button>
+      </div>
+
+      <div class="result" id="result">
+        <div class="details">
+          <p class="head">
+            IP ADDRESS:
+          </p>
+          <p class="findings" id="ip"></p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="details">
+          <p class="head">
+            LOCATION:
+          </p>
+          <p class="findings" id="loc"></p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="details">
+          <p class="head">
+            TIMEZONE:
+          </p>
+          <p class="findings" id="timezone"></p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="details">
+          <p class="head">
+            COUNTRY:
+          </p>
+          <p class="findings" id="country"></p>
+        </div>
+      </div>
+    </div>
+    <div class="map-area" id="map"></div>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
